@@ -1,0 +1,116 @@
+{{>header}}
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-12 p-3 mt-2">
+            <div class="form-group">
+
+                <form class="form-control p-4 _form" action="" method="get">
+
+                    <input placeholder="Enter Your Location" class="form-control _input" id="add" value=""
+                        name="address" type="text">
+                    <button class="btn mt-2 "> Search</button>
+                    <span class="text-danger mt-3 font-weight-bold" id="error"> </span>
+                </form>
+
+            </div>
+        </div>
+        <section class="mt-5 w-100">
+            <div class="row">
+                <div class="col-12 col-md-6 p-4">
+                    <div class="card">
+                        <h5 class="card-header" id="location">Location</h5>
+                        <div class="card-body">
+                            <div id="image"></div>
+                            <p class="card-text" id="summary">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-4">
+                    <div class="table-responsive">
+                        <table class=" float-right table borderless ">
+                            <thead class="thead-dark">
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">Current Time</th>
+                                    <td id="ct"></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">Temperature </th>
+
+                                    <td id="temp">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">Precipitation </th>
+
+                                    <td id="precip">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">cloudCover </th>
+
+                                    <td id="cloudcover">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">Precipitation Type </th>
+
+                                    <td id="precipType">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">Humidity </th>
+
+                                    <td id="humidity">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">Pressure </th>
+
+                                    <td id="pressure">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">windSpeed </th>
+
+                                    <td id="windspeed">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">visibility </th>
+
+                                    <td id="visibility">Mark</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">uvIndex </th>
+                                    <td id="uvindex">Mark</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="fore"></div>
+                <div id="loc"></div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+{{>footer}}
